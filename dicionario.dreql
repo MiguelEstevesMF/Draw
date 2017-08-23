@@ -1,0 +1,11 @@
+typedefs:
+a::INT;
+b::STR;
+mes::{ jan, fev, mar, abr, mai };
+
+classes:
+Autor = !(mes::Nome)x(INT::Idade);
+Livro = !(INT::Isbn);
+
+relations:
+Autor Nome(1) <-> Livro Nome(n);
